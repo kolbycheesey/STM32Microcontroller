@@ -1,0 +1,31 @@
+20:22:30 **** Incremental Build of configuration Debug for project Lab6 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\School\ECE 36200\workspace\Lab6\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab6/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab6/inc" -I"D:/School/ECE 36200/workspace/Lab6/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:235:5: warning: implicit declaration of function 'autotest' [-Wimplicit-function-declaration]
+     autotest(); // test all of the subroutines you wrote
+     ^~~~~~~~
+../src/main.c: In function 'TIM6_DAC_IRQHandler':
+../src/main.c:201:9: warning: 'sample' is used uninitialized in this function [-Wuninitialized]
+  sample += wavetable [offseta >> 16];
+  ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"D:/School/ECE 36200/workspace/Lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6.elf" @"objects.list" D:/School/ECE\ 36200/workspace/Lab6/src/autotest.o  -lm
+Finished building target: Lab6.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6.elf" "Lab6.bin"
+arm-none-eabi-size "Lab6.elf"
+   text	   data	    bss	    dec	    hex	filename
+  56944	   2492	   4824	  64260	   fb04	Lab6.elf
+ 
+
+20:22:32 Build Finished (took 1s.748ms)
+

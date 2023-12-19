@@ -1,0 +1,27 @@
+17:57:18 **** Build of configuration Debug for project Lab7 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\School\ECE 36200\workspace\Lab7\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab7/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab7/inc" -I"D:/School/ECE 36200/workspace/Lab7/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'shift':
+../src/main.c:368:22: warning: array subscript has type 'char' [-Wchar-subscripts]
+     display[7] = font[c];
+                      ^
+Finished building: ../src/main.c
+ 
+Building target: Lab7.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"D:/School/ECE 36200/workspace/Lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab7.elf" @"objects.list" D:/School/ECE\ 36200/workspace/Lab7/src/autotest.o  -lm
+Finished building target: Lab7.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab7.elf" "Lab7.bin"
+arm-none-eabi-size "Lab7.elf"
+   text	   data	    bss	    dec	    hex	filename
+  63836	   2492	   4824	  71152	  115f0	Lab7.elf
+ 
+
+17:57:21 Build Finished (took 2s.501ms)
+

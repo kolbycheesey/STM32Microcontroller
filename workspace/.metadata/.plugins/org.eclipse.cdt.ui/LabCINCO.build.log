@@ -1,0 +1,28 @@
+00:47:43 **** Incremental Build of configuration Debug for project LabCINCO ****
+make -j8 all 
+Building target: LabCINCO.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"D:/School/ECE 36200/workspace/LabCINCO/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "LabCINCO.elf" @"objects.list" D:/School/ECE\ 36200/workspace/LabCINCO/src/autotest.o  -lm
+D:/School/ECE 36200/workspace/LabCINCO/src/autotest.o: In function `check_show_digit':
+autotest.c:(.text.check_show_digit+0x6a): undefined reference to `show_digit'
+D:/School/ECE 36200/workspace/LabCINCO/src/autotest.o: In function `check_get_cols':
+autotest.c:(.text.check_get_cols+0xd4): undefined reference to `get_cols'
+D:/School/ECE 36200/workspace/LabCINCO/src/autotest.o: In function `check_update_hist':
+autotest.c:(.text.check_update_hist+0x6e): undefined reference to `update_hist'
+autotest.c:(.text.check_update_hist+0x124): undefined reference to `update_hist'
+autotest.c:(.text.check_update_hist+0x1ac): undefined reference to `update_hist'
+D:/School/ECE 36200/workspace/LabCINCO/src/autotest.o: In function `check_set_row':
+autotest.c:(.text.check_set_row+0x4c): undefined reference to `set_row'
+D:/School/ECE 36200/workspace/LabCINCO/src/autotest.o: In function `game':
+autotest.c:(.text.game+0xc6): undefined reference to `show_digit'
+autotest.c:(.text.game+0xe2): undefined reference to `set_row'
+autotest.c:(.text.game+0xec): undefined reference to `get_cols'
+autotest.c:(.text.game+0x17c): undefined reference to `get_cols'
+D:/School/ECE 36200/workspace/LabCINCO/src/autotest.o: In function `autotest':
+autotest.c:(.text.autotest+0x638): undefined reference to `show_digit'
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'LabCINCO.elf' failed
+make: *** [LabCINCO.elf] Error 1
+
+00:47:44 Build Finished (took 819ms)
+

@@ -1,0 +1,74 @@
+16:14:14 **** Build of configuration Debug for project Lab11part3_project ****
+make -j8 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../src/lcd.c
+Building file: ../src/main.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Building file: ../src/syscalls.c
+Invoking: MCU GCC Compiler
+Building file: ../src/system_stm32f0xx.c
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/lcd.d" -MT"src/lcd.o" -o "src/lcd.o" "../src/lcd.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f0xx.d" -MT"src/system_stm32f0xx.o" -o "src/system_stm32f0xx.o" "../src/system_stm32f0xx.c"
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_can.c
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_adc.d" -MT"StdPeriph_Driver/src/stm32f0xx_adc.o" -o "StdPeriph_Driver/src/stm32f0xx_adc.o" "../StdPeriph_Driver/src/stm32f0xx_adc.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_can.d" -MT"StdPeriph_Driver/src/stm32f0xx_can.o" -o "StdPeriph_Driver/src/stm32f0xx_can.o" "../StdPeriph_Driver/src/stm32f0xx_can.c"
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_cec.d" -MT"StdPeriph_Driver/src/stm32f0xx_cec.o" -o "StdPeriph_Driver/src/stm32f0xx_cec.o" "../StdPeriph_Driver/src/stm32f0xx_cec.c"
+Finished building: ../startup/startup_stm32.s
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+Finished building: ../src/syscalls.c
+Invoking: MCU GCC Compiler
+ 
+../src/lcd.c:8:10: fatal error: lcd.h: No such file or directory
+ #include "lcd.h"
+          ^~~~~~~
+compilation terminated.
+../src/main.c:16:10: fatal error: lcd.h: No such file or directory
+ #include "lcd.h"
+          ^~~~~~~
+compilation terminated.
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_comp.d" -MT"StdPeriph_Driver/src/stm32f0xx_comp.o" -o "StdPeriph_Driver/src/stm32f0xx_comp.o" "../StdPeriph_Driver/src/stm32f0xx_comp.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+src/subdir.mk:27: recipe for target 'src/lcd.o' failed
+make: *** [src/lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+Invoking: MCU GCC Compiler
+D:\School\ECE 36200\workspace\Lab11part3_project\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab11part3_project/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/inc" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab11part3_project/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_crc.d" -MT"StdPeriph_Driver/src/stm32f0xx_crc.o" -o "StdPeriph_Driver/src/stm32f0xx_crc.o" "../StdPeriph_Driver/src/stm32f0xx_crc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+Finished building: ../src/system_stm32f0xx.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_can.c
+ 
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+ 
+
+16:14:16 Build Finished (took 1s.705ms)
+

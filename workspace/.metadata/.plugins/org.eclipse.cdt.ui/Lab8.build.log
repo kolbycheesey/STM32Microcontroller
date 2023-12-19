@@ -1,0 +1,27 @@
+20:03:23 **** Build of configuration Debug for project Lab8 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\School\ECE 36200\workspace\Lab8\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"D:/School/ECE 36200/workspace/Lab8/StdPeriph_Driver/inc" -I"D:/School/ECE 36200/workspace/Lab8/inc" -I"D:/School/ECE 36200/workspace/Lab8/CMSIS/device" -I"D:/School/ECE 36200/workspace/Lab8/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'spi_enable_dma':
+../src/main.c:190:22: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DMA1_Channel5->CPAR = &SPI2->DR;
+                      ^
+Finished building: ../src/main.c
+ 
+Building target: Lab8.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"D:/School/ECE 36200/workspace/Lab8/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab8.elf" @"objects.list" D:/School/ECE\ 36200/workspace/Lab8/src/autotest.o  -lm
+Finished building target: Lab8.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab8.elf" "Lab8.bin"
+arm-none-eabi-size "Lab8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  81296	   2492	   3832	  87620	  15644	Lab8.elf
+ 
+
+20:03:25 Build Finished (took 2s.170ms)
+

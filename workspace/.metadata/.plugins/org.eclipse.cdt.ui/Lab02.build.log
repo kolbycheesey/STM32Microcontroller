@@ -1,0 +1,6 @@
+00:37:38 **** Build of configuration Debug for project Lab02 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+00:37:39 Build Finished (took 772ms)
+
